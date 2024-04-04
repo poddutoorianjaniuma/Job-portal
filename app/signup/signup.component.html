@@ -1,0 +1,89 @@
+<!-- registration-form.component.html -->
+
+<div class="registration-form">
+  <h2>User Registration</h2>
+  <form>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="confirmPassword">Confirm Password</label>
+      <input type="password" id="confirmPassword" name="confirmPassword" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="address">Address</label>
+      <textarea id="address" name="address" class="form-control" rows="3" required></textarea>
+    </div>
+    <div class="form-group">
+      <label for="mobileNumber">Mobile Number</label>
+      <input type="tel" id="mobileNumber" name="mobileNumber" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="userType">User Type</label>
+      <select id="userType" name="userType" class="form-control" required (change)="toggleAdditionalFields()">
+        <option value="">Select User Type</option>
+        <option value="recruiter">Recruiter</option>
+        <option value="jobSeeker">Job Seeker</option>
+      </select>
+    </div>
+    
+    <!-- Additional fields for job seekers -->
+    <div class="job-seeker-fields" style="display: none;">
+      <div class="form-group">
+        <label for="qualification">Qualification</label>
+        <input type="text" id="qualification" name="qualification" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="tenthPercentage">10th Percentage</label>
+        <input type="text" id="tenthPercentage" name="tenthPercentage" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="interPercentage">Intermediate/Diploma Percentage</label>
+        <input type="text" id="interPercentage" name="interPercentage" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="degreePercentage">B.Tech/Degree Percentage</label>
+        <input type="text" id="degreePercentage" name="degreePercentage" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="experience">Experience</label>
+        <input type="text" id="experience" name="experience" class="form-control">
+      </div>
+    </div>
+    
+    <!-- Additional fields for recruiters -->
+    <div class="recruiter-fields" style="display: none;">
+      <div class="form-group">
+        <label for="companyName">Company Name</label>
+        <input type="text" id="companyName" name="companyName" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="designation">Designation</label>
+        <input type="text" id="designation" name="designation" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="location">Location</label>
+        <input type="text" id="location" name="location" class="form-control">
+      </div>
+      <div class="form-group">
+        <label for="recruiterDetails">Other Details (Optional)</label>
+        <textarea id="recruiterDetails" name="recruiterDetails" class="form-control" rows="3"></textarea>
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Register</button>
+  </form>
+</div>

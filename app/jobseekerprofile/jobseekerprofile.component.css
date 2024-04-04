@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+nav {
+    background-color: #00aaff;
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+}
+
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #ff0000;
+    font-weight: bold;
+}
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+.job-listing {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.job-listing h2 {
+    margin-top: 0;
+}
+
+.right-align {
+    text-align: right;
+}
+.button {
+    background-color: #ff00f7; /* Blue color */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.button:hover {
+    background-color: #6800b3; /* Darker blue color on hover */
+}
+h2 {
+    background-color: none;
+    color:#ff0000;
+    padding: 20px;
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color: #000fb3;
+
+}
+table {
+    width: 70%;
+    border-collapse: collapse;
+    background-color: rgb(253, 255, 105);
+    margin-left: auto;
+    margin-right: auto;
+   
+  }
+  
+  th, .placeholder {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align:left;
+  }
+  
+  td {
+    border: 1px solid #000;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .wide-col {
+    width: 60%;
+  }
+  h3 {
+    background-color: none;
+    color: #160612;
+    padding: 20px;
+    text-align: center;
+}

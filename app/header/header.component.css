@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+header {
+    background-color: #06e9ed;
+    color: white;
+    padding: 20px;
+    text-align: left;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+.container {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 0 20px;
+}
+.job-listing {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+.job-listing h2 {
+    margin-top: 0;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.button:hover {
+    background-color: #121111; /* Darker blue color on hover */
+}
+h2 {
+    background-color: none;
+    color: #160612;
+    padding: 20px;
+    text-align: center;
+}
+nav ul li a:hover{
+    background-color:rgb(245, 237, 6);
+
+}
+.background-image {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Ensure the container takes up full width */
+}
+
+.background-image img {
+    display: block;
+    width: 100%; /* Make sure the image fills the entire width of its container */
+    height: auto; /* Allow the height to adjust proportionally based on width */
+}
+
+.image-text {
+    position: absolute;
+    top: 50px; /* Adjust as needed to move the text downwards from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    color: red;
+    font-size: 48px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+
+.signup-button-container {
+    display: inline-block; /* Display as inline-block to stay inline */
+    margin-left: 10px; /* Adjust margin as needed */
+}
+
+.login-button-container {
+    display: inline-block; /* Display as inline-block to stay inline */
+    margin-left: 10px; /* Adjust margin as needed */
+}

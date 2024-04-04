@@ -1,0 +1,29 @@
+<div class="login-form">
+  <h2>Login</h2>
+  <form>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" class="form-control" required>
+    </div>
+    <div class="form-group">
+      <input type="checkbox" id="rememberMe" name="rememberMe">
+      <label for="rememberMe">Remember Me</label>
+    </div>
+    <div class="form-group">
+      <label for="userType">User Type</label>
+      <select id="userType" name="userType" class="form-control" [(ngModel)]="selectedUserType" required>
+        <option value="jobSeeker">Job Seeker</option>
+        <option value="recruiter">Recruiter</option>
+        <option value="admin">Admin</option>
+      </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+    <a routerLink="/forgetpwd">ForgetPassword</a>
+  </form>
+  <div *ngIf="errorMessage" class="error-message">{{ errorMessage }}</div>
+
+</div>
